@@ -5,7 +5,7 @@ import styled from 'styled-components';
 function App() {
     return (
         <div className="App">
-            <Title>Welcome to main branch</Title>
+            <Title>Welcome to main branch or not</Title>
         </div>
     );
 }
