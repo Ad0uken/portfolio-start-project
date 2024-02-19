@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export const Header = () => {
     return (
@@ -19,3 +20,6 @@ export const Header = () => {
     );
 };
 
+const StyledHeader = styled.header`
+    background-color: green;
+`
