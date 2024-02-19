@@ -13,5 +13,5 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: #1cc51c;
+    background-color: #2a60c5;
 `
