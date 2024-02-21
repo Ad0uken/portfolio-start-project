@@ -7,6 +7,7 @@ import {SectionTitle} from '../../../components/SectionTitle'
 
 export const Skills = () => {
     return (
+        
         <StyledSkills>
             <SectionTitle>My Skills</SectionTitle>
             <FlexWrapper wrap='wrap'>

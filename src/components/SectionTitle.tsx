@@ -3,5 +3,5 @@ import React from 'react';
 
 export const SectionTitle = styled.h2`
 color: red;
-text-align: canter;
+text-align: center;
 `
