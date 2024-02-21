@@ -5,7 +5,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align-items={'center'} justify={'space-around'}>
+            <FlexWrapper align={'center'} justify={'space-around'}>
             <div>
                 <span>
                     Hi There
