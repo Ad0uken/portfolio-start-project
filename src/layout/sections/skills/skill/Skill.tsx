@@ -24,7 +24,7 @@ const StyledSkill = styled.div`
 `
 
 const SkillTitle = styled.h3`
-    text-align: center;
+
 `
 
 const SkillText = styled.p`
