@@ -7,15 +7,11 @@ export const Main = () => {
         <StyledMain>
             <FlexWrapper align={'center'} justify={'space-around'}>
             <div>
-                <span>
-                    Hi There
-                </span>
-                <Name>
-                    I am Svetlana
-                </Name>
+                <span>Hi There</span>
+                <h2>I am Svetlana</h2>
                 <MainTitle>A web developer</MainTitle>
+                </div>
                 <Photo src={photo} alt=''/>
-            </div>
             </FlexWrapper>
             
         </StyledMain>
