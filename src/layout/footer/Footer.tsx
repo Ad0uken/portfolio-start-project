@@ -41,14 +41,14 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: #323285;
-    min-height: 10vh;
+    min-height: 20vh;
 `
 const Name = styled.span`
     
 `
 const SocialItem = styled.li`
     display:flex;
-    gap: 20px;
+    gap: 30px;
     
 `
 const SocialList = styled.ul`
