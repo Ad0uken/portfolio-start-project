@@ -7,7 +7,7 @@ import { FlexWrapper } from '../../components/FlexWrapper';
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction ={'column'} align='center'>
+            <FlexWrapper direction ={'column'} align={'center'}>
                 <Name>Andrey</Name>
                 <SocialList>
                     <SocialItem>
