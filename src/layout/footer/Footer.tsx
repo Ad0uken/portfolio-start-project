@@ -7,7 +7,7 @@ import { FlexWrapper } from '../../components/FlexWrapper';
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction ={'column'} align={'center'}>
+            <FlexWrapper direction ={'column'} align={'center'} align-items={'flex'}>
                 <Name>Andrey</Name>
                 <SocialList>
                     <SocialItem>
@@ -52,7 +52,7 @@ const SocialItem = styled.li`
     
 `
 const SocialList = styled.ul`
-    align-items: flex;
+    
 `
 const SocialLink = styled.a`
     
