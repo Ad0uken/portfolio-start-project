@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
+import { FlexWrapper } from '../../components/FlexWrapper';
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
+            <FlexWrapper direction ={'column'} align='center'>
                 <Name>Andrey</Name>
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'instagram'}/>
+                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'instagram'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
@@ -32,18 +34,20 @@ export const Footer = () => {
                     <Copyright>
                         @ 2024
                     </Copyright>
+                    </FlexWrapper>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-    
+    background-color: #323285;
+    min-height: 20vh;
 `
 const Name = styled.span`
     
 `
 const SocialItem = styled.li`
-    
+    display:flex;
 `
 const SocialList = styled.ul`
     
