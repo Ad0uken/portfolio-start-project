@@ -17,17 +17,17 @@ export const Footer = () => {
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'telegram'}/>
+                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'telegram'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'vk'}/>
+                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'vk'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId={'linkedin'}/>
+                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'linkedin'}/>
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
