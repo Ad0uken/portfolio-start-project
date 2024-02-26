@@ -17,18 +17,19 @@ export const Slider = () => {
 
 const StyledSlider = styled.div`
     border: 1px solid red;
-
+    max-width:500px;
 `
 
 const Slide = styled.div`
     
+    text-align:center;
 
 `
-const Text = styled.div`
+const Text = styled.b`
     
 
 `
-const Name = styled.div`
+const Name = styled.span`
     
 
 `
