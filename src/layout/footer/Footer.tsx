@@ -48,6 +48,7 @@ const Name = styled.span`
 `
 const SocialItem = styled.li`
     display:flex;
+    gap: 30px;
 `
 const SocialList = styled.ul`
     
