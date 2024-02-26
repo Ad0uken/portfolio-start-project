@@ -11,8 +11,21 @@ export const Footer = () => {
                     <SocialItem>
                         <SocialLink>
                             <Icon iconId={'instagram'}/>
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
                             <Icon iconId={'telegram'}/>
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
                             <Icon iconId={'vk'}/>
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon iconId={'linkedin'}/>
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
