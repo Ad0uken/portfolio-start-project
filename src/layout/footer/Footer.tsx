@@ -9,6 +9,7 @@ export const Footer = () => {
         <StyledFooter>
             <FlexWrapper direction ={'column'} align={'center'} align-items={'flex'}>
                 <Name>Andrey</Name>
+                <span>
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
@@ -31,6 +32,7 @@ export const Footer = () => {
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
+                </span>
                     <Copyright>
                         @ 2024
                     </Copyright>
