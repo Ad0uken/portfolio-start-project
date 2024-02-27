@@ -20,7 +20,7 @@ function App() {
             <Testimony/>
             <Contact/>
             <Slogan/>
-            <Footer/>
+            <span><Footer/></span>
         </div>
     );
 }
