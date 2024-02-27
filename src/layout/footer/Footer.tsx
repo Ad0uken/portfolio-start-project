@@ -34,7 +34,7 @@ export const Footer = () => {
                 </SocialList>
                 
                     <Copyright>
-                        @ 2024
+                        @ 2024 no Copyright Reserved
                     </Copyright>
                     </FlexWrapper>
         </StyledFooter>

@@ -15,5 +15,5 @@ export const Slogan = () => {
 const StyledSlogan = styled.div`
     min-height: 30vh;
     background-color: purple;
-    
+    text-align:center;
 `
