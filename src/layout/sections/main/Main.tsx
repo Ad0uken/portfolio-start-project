@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import photo from '../../../assets/images/photo.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper';
+import { theme } from '../../../styles/Theme';
 export const Main = () => {
     return (
         <StyledMain>
@@ -18,7 +19,7 @@ export const Main = () => {
 };
 const StyledMain = styled.div`
     min-height: 100vh;
-    background-color: #b91ce0;
+    background-color: ${theme.colors.primaryBg};
 `
 
 
