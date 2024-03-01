@@ -17,8 +17,9 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: ${theme.colors.font}
   }
-  a{
+  a {
     text-decoration: none;
   }
 
@@ -35,4 +36,5 @@ section:nth-of-type(odd) {
 section:nth-of-type(even) {
     background-color: ${theme.colors.secondaryBg}
 }
+
 `
