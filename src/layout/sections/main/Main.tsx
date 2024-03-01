@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import photo from '../../../assets/images/photo.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper';
@@ -19,7 +18,7 @@ export const Main = () => {
 };
 const StyledMain = styled.div`
     min-height: 100vh;
-    
+    background-color: #b91ce0;
 `
 
 
