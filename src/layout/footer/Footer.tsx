@@ -54,7 +54,7 @@ const SocialItem = styled.li`
     
 `
 const SocialList = styled.ul`
-    
+    display: flex;
 `
 const SocialLink = styled.a`
     

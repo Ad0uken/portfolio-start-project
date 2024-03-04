@@ -8,12 +8,13 @@ export const Main = () => {
         <StyledMain>
             <Container>
             <FlexWrapper align={'center'} justify={'space-between'}>
-            <div>
+                <div>
                 <SmallText>Hi There</SmallText>
-                <Name>I am Svetlana</Name>
+                <Name>I am <span>Svetlana</span></Name>
                 <MainTitle>A web developer</MainTitle>
                 </div>
-                <Photo src={photo} alt=''/>
+                <PhotoWrapper><Photo src={photo} alt=''/></PhotoWrapper>
+                
             </FlexWrapper>
             </Container>
         </StyledMain>
@@ -23,8 +24,23 @@ const StyledMain = styled.div`
     min-height: 100vh;
     background-color: ${theme.colors.primaryBg};
     display: flex;
+    
 `
+const PhotoWrapper = styled.div`
+    position: relative;
+    z-index: 0;
 
+    &::before {
+        content: '';
+        width: 360px;
+        height: 470px;
+        border: 5px solid ${theme.colors.accent};
+        position: absolute;
+        top: -24px;
+        left: 24px;
+        z-index: -1;
+    }
+`
 
 
 
@@ -36,6 +52,7 @@ const Photo = styled.img`
 const MainTitle = styled.h1`
     font-weight: 400;
     font-size: 27px;
+    margin: 0;
 `
 
 const Name = styled.h2`
@@ -43,8 +60,29 @@ const Name = styled.h2`
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 0.05em;
+    margin: 10px 0;
+
+    span {
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 20px;
+            background-color: ${theme.colors.accent};
+
+
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+
+        }
+    }
 `
 const SmallText = styled.h2`
     font-weight: 400;
     font-size: 14px;
+    margin: 0;
 `
