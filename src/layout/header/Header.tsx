@@ -4,7 +4,7 @@ import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
-import { HeaderMenu } from './headermenu/HeaferMenu';
+import { HeaderMenu } from './headermenu/HeaderMenu';
 
 const items = ['Home','Skills','Works','Testimony','Contact']
 
