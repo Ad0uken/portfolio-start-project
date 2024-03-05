@@ -24,8 +24,8 @@ export const Link = styled.a`
         
         position: absolute;
         bottom: 3px;
-        left: 0px;
-        right: 0px;
+        right: 0;
+        left: 0;
         z-index: -1;
     }
 `
