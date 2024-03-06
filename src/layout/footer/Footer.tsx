@@ -72,6 +72,14 @@ const SocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    color: ${theme.colors.accent};
+
+    &:hover {
+        color: ${theme.colors.primaryBg};
+        transform: translateY(-4px);
+        
+    }
 `
 const Copyright = styled.small`
     font-weight: 400;
