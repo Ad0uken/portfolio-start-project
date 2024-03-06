@@ -15,7 +15,7 @@ export const Skill = (props: SkillPropsType) => {
             <FlexWrapper direction='column' align={'center'}>
                 <IconWrapper>
                     <Icon iconId={props.iconId}/>
-                    </IconWrapper>
+                </IconWrapper>
                     <SkillTitle>{props.title}</SkillTitle>
                     <SkillText>{props.description}</SkillText>
                     </FlexWrapper>
@@ -38,7 +38,7 @@ const SkillText = styled.p`
     
 `
 
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
     position: relative;
 
 

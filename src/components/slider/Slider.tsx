@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 
 
@@ -9,13 +10,13 @@ export const Slider = () => {
         <StyledSlider>
             <FlexWrapper>
             <Slide>
-        <Text>Awesome developer</Text>
+        <Text>Awesome developer fo some reason doing this shit for some people who cant do it</Text>
         <Name>@Ad0uken</Name>
             </Slide>
             </FlexWrapper>
            <Pagination>
                 <span></span>
-                <span></span>
+                <span className="active"></span>
                 <span></span>
            </Pagination>
         </StyledSlider>
@@ -24,7 +25,7 @@ export const Slider = () => {
 
 
 const StyledSlider = styled.div`
-    border: 1px solid red;
+
     max-width:500px;
     display: flex;
     flex-direction: column;
@@ -37,19 +38,35 @@ const Slide = styled.div`
 
 `
 const Text = styled.b`
-    
+    display: inline-block;
 
 `
 const Name = styled.span`
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 22px 0 42px;
+    display: inline-block;
 
 `
 const Pagination = styled.div`
     span {
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 7px;
+        height: 7px;
         margin: 5px;
-        background-color: #b148b1;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+
+        & + span {
+            margin-left: 5px;
+        }
+        &.active {
+            background-color: ${theme.colors.accent};
+            width: 20px;
+
+        }
     }
 `
