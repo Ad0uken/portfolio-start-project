@@ -8,28 +8,28 @@ import { theme } from '../../styles/Theme';
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction ={'column'} align={'center'} align-items={'flex'}>
+            <FlexWrapper direction ={'column'} align={'center'}>
                 <Name>Andrey</Name>
                 
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'instagram'}/>
+                            <Icon height={'21px'} width={'21px'} vieBox={'0 0 21px 21px'} iconId={'instagram'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'telegram'}/>
+                            <Icon height={'21px'} width={'21px'} vieBox={'0 0 21px 21px'} iconId={'telegram'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'vk'}/>
+                            <Icon height={'21px'} width={'21px'} vieBox={'0 0 21px 21px'} iconId={'vk'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height='21' width='21' vieBox='0 0 21px 21px' iconId={'linkedin'}/>
+                            <Icon height={'21px'} width={'21px'} vieBox={'0 0 21px 21px'} iconId={'linkedin'}/>
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
@@ -75,10 +75,12 @@ const SocialLink = styled.a`
 
     color: ${theme.colors.accent};
 
+
+
     &:hover {
         color: ${theme.colors.primaryBg};
         transform: translateY(-4px);
-        
+
     }
 `
 const Copyright = styled.small`
