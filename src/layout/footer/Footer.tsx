@@ -68,7 +68,7 @@ const SocialItem = styled.li`
 const SocialList = styled.ul`
     display: flex;
     gap: 20px;
-    margin: 30px 0;
+    margin:30px 0;
 
 `
 const SocialLink = styled.a`

@@ -28,6 +28,7 @@ body {
 
   ul {
     list-style: none;
+    padding: 0;
   }
 button {
     background-color: unset;
