@@ -14,22 +14,30 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={'21px'} vieBox="0 0 21px 21px" iconId={'instagram'}/>
+                            <ImgM>
+                            <Icon height={'21px'} width={'21px'} viewBox="0 0 21px 21px" iconId={'instagram'}/>
+                            </ImgM>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={'21px'} vieBox="0 0 21px 21px" iconId={'telegram'}/>
+                            <ImgM>
+                            <Icon height={'21px'} width={'21px'} viewBox="0 0 21px 21px" iconId={'telegram'}/>
+                            </ImgM>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={'21px'} vieBox="0 0 21px 21px" iconId={'vk'}/>
+                            <ImgM>
+                            <Icon height={'21px'} width={'21px'} viewBox="0 0 21px 21px" iconId={'vk'}/>
+                            </ImgM>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={'21px'} vieBox="0 0 21px 21px" iconId={'linkedin'}/>
+                            <ImgM>
+                            <Icon height={'21px'} width={'21px'} viewBox="0 0 21px 21px" iconId={'linkedin'}/>
+                            </ImgM>
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
@@ -88,4 +96,12 @@ const Copyright = styled.small`
     font-size: 12px;
     text-align: center;
     opacity: 0.5;
+`
+
+const ImgM = styled.svg`
+width: 21px;
+height: 21px;
+display: flex;
+align-items: center;
+    
 `
