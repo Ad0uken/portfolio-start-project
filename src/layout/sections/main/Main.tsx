@@ -7,12 +7,12 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-            <FlexWrapper align={'center'} justify={'space-between'}>
-                <div>
+            <FlexWrapper align={'center'} justify={'space-between'} margin='50px 50px'>
+                <StyledTextMain>
                 <SmallText>Hi There</SmallText>
                 <Name>I am <span>Svetlana</span></Name>
                 <MainTitle>A web developer</MainTitle>
-                </div>
+                </StyledTextMain>
                 <PhotoWrapper><Photo src={photo} alt=''/></PhotoWrapper>
                 
             </FlexWrapper>
@@ -20,6 +20,11 @@ export const Main = () => {
         </StyledMain>
     );
 };
+
+const StyledTextMain =styled.div`
+    margin-left: 20%;
+`
+
 const StyledMain = styled.div`
     min-height: 100vh;
     background-color: ${theme.colors.primaryBg};
@@ -29,6 +34,7 @@ const StyledMain = styled.div`
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
+    margin-right: 20%;
 
     &::before {
         content: '';
