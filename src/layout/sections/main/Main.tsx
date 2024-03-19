@@ -3,6 +3,7 @@ import photo from '../../../assets/images/photo.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { theme } from '../../../styles/Theme';
 import { Container } from '../../../components/Container';
+import { font } from '../../../styles/Common';
 export const Main = () => {
     return (
         <StyledMain>
@@ -22,7 +23,7 @@ export const Main = () => {
 };
 
 const StyledTextMain =styled.div`
-    margin-left: 20%;
+    
 `
 
 const StyledMain = styled.div`
@@ -34,7 +35,7 @@ const StyledMain = styled.div`
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
-    margin-right: 20%;
+    margin-top: 65px;
 
     &::before {
         content: '';
@@ -45,6 +46,11 @@ const PhotoWrapper = styled.div`
         top: -24px;
         left: 24px;
         z-index: -1;
+
+        @media ${theme.media.mobile} {
+            width: 314px;
+            height: 414px;
+        }
     }
 `
 
@@ -54,23 +60,27 @@ const Photo = styled.img`
     width: 350px;
     height: 430px;
     object-fit: cover;
+
+    @media ${theme.media.mobile} {
+        width: 310px;
+        height: 380px;
+    }
 `
 const MainTitle = styled.h1`
-    font-weight: 400;
-    font-size: 27px;
     margin: 0;
+    ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
 
 const Name = styled.h2`
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
+${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
     letter-spacing: 0.05em;
     margin: 10px 0;
 
     span {
         position: relative;
         z-index: 0;
+
+        white-space: nowrap;
 
         &::before {
             content: '';
@@ -85,6 +95,10 @@ const Name = styled.h2`
             z-index: -1;
 
         }
+    }
+
+    @media ${theme.media.mobile} {
+        margin: 15px 0 22px;
     }
 `
 const SmallText = styled.h2`
